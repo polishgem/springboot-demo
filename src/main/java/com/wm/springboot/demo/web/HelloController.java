@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class HelloController {
@@ -35,4 +34,9 @@ public class HelloController {
         return "index";
     }
 
+    @ResponseBody
+    @RequestMapping("/admin/config")
+    public String adminConfig() {
+        return "admin";
+    }
 }
