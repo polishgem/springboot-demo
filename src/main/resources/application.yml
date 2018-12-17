@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/test
+
+  mybatis:
+    mapperLocations: classpath*:mapper/*.xml
+    typeAliasesPackage: com.wm.springboot.demo.domain
+    configLocation: classpath*:mapper/*.xml
+
+server:
+  port: 8081
+
+application:
+  name: demo
+
+logging:
+  level:
+    root: debug
+  path: logs/spring-boot-logback
+
+debug: true
+
+apollo:
+  bootstrap:
+    enabled: true
