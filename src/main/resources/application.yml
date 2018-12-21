@@ -26,3 +26,9 @@ debug: true
 apollo:
   bootstrap:
     enabled: true
+
+
+shiro:
+  enabled: true
+  server: http://localhost:8081
+  cas: https://localhost:8443/cas
